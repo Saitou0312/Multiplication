@@ -20,20 +20,26 @@ if ue_keta_num == 2 and shita_keta_num == 2:
     shita_jyunokuraihaint = int(shita_jyunokurai)
     ichiretu = ue_num * shita_ichinokuraihaint
     niretu = ue_num * shita_jyunokuraihaint * 10
-    print("  " + str(ue_num))
-    print("× " + str(shita_num))
-    print("-----")
-    print(" " + str(ichiretu))
-    print(niretu)
-    print("-----")
-    print(ue_num * shita_num)
+    if shita_ichinokurai == 0:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-----")
+        print(ue_num * shita_num)
+    else:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-----")
+        print("  " + str(ichiretu))
+        print(niretu)
+        print("-----")
+        print(ue_num * shita_num)
 
 elif ue_keta_num == 1 and shita_keta_num == 2:
     ue_ichinokurai = str(ue_num_num[-1])
     shita_ichinokurai = str(shita_num_num[-1])
     shita_jyuunokurai = str(shita_num_num[-2])
-    print("   " + str(ue_num))
-    print("× " + str(shita_num))
+    print("  " + str(ue_num))
+    print("×  " + str(shita_num))
     print("-----")
     print(" " + str(ue_num * shita_num))
 
@@ -56,13 +62,18 @@ elif ue_keta_num == 3 and shita_keta_num == 2:
     shita_jyunokuraihaint = int(shita_jyunokurai)
     ichiretu = ue_num * shita_ichinokuraihaint
     niretu = ue_num * shita_jyunokuraihaint * 10
-    print(" " + str(ue_num))
-    print("× " + str(shita_num))
-    print("-------")
-    print(" " + str(ichiretu))
-    print(niretu)
-    print("-------")
-    print(ue_num * shita_num)
+    if shita_ichinokurai == 0:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-----")
+    else:
+        print(" " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-------")
+        print(" " + str(ichiretu))
+        print("" + str(niretu))
+        print("-------")
+        print(ue_num * shita_num)
 
 elif ue_keta_num == 3 and shita_keta_num == 1:
     ue_ichinokurai = str(ue_num_num[-1])
@@ -88,14 +99,19 @@ elif ue_keta_num == 3 and shita_keta_num == 3:
     ichiretu = ue_num * shita_ichinokuraihaint
     niretu = ue_num * shita_jyunokuraihaint * 10
     sanretu = ue_num * shita_hyakunokuraihaint * 100
-    print("  " + str(ue_num))
-    print("× " + str(shita_num))
-    print("-------")
-    print("  " + str(ichiretu))
-    print(" " + str(niretu))
-    print(sanretu)
-    print("-------")
-    print(ue_num * shita_num)
+    if shita_ichinokurai == 0:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-----")
+    else:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-------")
+        print("  " + str(ichiretu))
+        print(" " + str(niretu))
+        print(sanretu)
+        print("-------")
+        print(ue_num * shita_num)
 
 elif ue_keta_num == 4 and shita_keta_num == 3:
     ue_ichinokurai = str(ue_num_num[-1])
@@ -107,13 +123,18 @@ elif ue_keta_num == 4 and shita_keta_num == 3:
     shita_jyunokuraihaint = int(shita_jyunokurai)
     ichiretu = ue_num * shita_ichinokuraihaint
     niretu = ue_num * shita_jyunokuraihaint * 10
-    print(" " + str(ue_num))
-    print("× " + str(shita_num))
-    print("-------")
-    print(" " + str(ichiretu))
-    print(niretu)
-    print("-------")
-    print(ue_num * shita_num)
+    if shita_ichinokurai == 0:
+        print(" " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-----")
+    else:
+        print(" " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-------")
+        print(" " + str(ichiretu))
+        print(niretu)
+        print("-------")
+        print(ue_num * shita_num)
 
 elif ue_keta_num == 4 and shita_keta_num == 2:
     ue_ichinokurai = str(ue_num_num[-1])
@@ -125,13 +146,18 @@ elif ue_keta_num == 4 and shita_keta_num == 2:
     shita_jyunokuraihaint = int(shita_jyunokurai)
     ichiretu = ue_num * shita_ichinokuraihaint
     niretu = ue_num * shita_jyunokuraihaint * 10
-    print(" " + str(ue_num))
-    print("×  " + str(shita_num))
-    print("-------")
-    print(" " + str(ichiretu))
-    print(niretu)
-    print("-------")
-    print(ue_num * shita_num)
+    if shita_ichinokurai == 0:
+        print("  " + str(ue_num))
+        print("×  " + str(shita_num))
+        print("-----")
+    else:
+        print(" " + str(ue_num))
+        print("×  " + str(shita_num))
+        print("-------")
+        print(" " + str(ichiretu))
+        print(niretu)
+        print("-------")
+        print(ue_num * shita_num)
 
 elif ue_keta_num == 4 and shita_keta_num == 4:
     ue_ichinokurai = str(ue_num_num[-1])
@@ -150,12 +176,17 @@ elif ue_keta_num == 4 and shita_keta_num == 4:
     niretu = ue_num * shita_jyunokuraihaint * 10
     sanretu = ue_num * shita_hyakunokuraihaint * 100
     yonretu = ue_num * shita_sennokuraihaint * 1000
-    print("  " + str(ue_num))
-    print("× " + str(shita_num))
-    print("----------")
-    print("   " + str(ichiretu))
-    print("  " + str(niretu))
-    print(" " + str(sanretu))
-    print(yonretu)
-    print("----------")
-    print(ue_num * shita_num)
+    if shita_ichinokurai == 0:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("-----")
+    else:
+        print("  " + str(ue_num))
+        print("× " + str(shita_num))
+        print("----------")
+        print("   " + str(ichiretu))
+        print("  " + str(niretu))
+        print(" " + str(sanretu))
+        print(yonretu)
+        print("----------")
+        print(ue_num * shita_num)
