@@ -1,0 +1,12 @@
+use = input("COMMAND...[q:終わる, t:たす, h:ひく, k:かける, w:わる]: ")
+use_commands = str(use)
+if use_commands == "t":
+    tasu_number1 = input("何をたしますか？(数字): ")
+    tasu_number2 = input("何をたしますか？(数字): ")
+    tasu_number3 = input("何をたしますか？(数字): ")
+    tasu_number4 = input("何をたしますか？(数字): ")
+    tasu_number_num1 = str(tasu_number1)
+    tasu_number_num2 = str(tasu_number2)
+    tasu_number_num3 = str(tasu_number3)
+    tasu_number_num4 = str(tasu_number4)
+    print(tasu_number_num1 + tasu_number_num2 + tasu_number3 + tasu_number4)
