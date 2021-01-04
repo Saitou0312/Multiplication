@@ -1,62 +1,12 @@
-ue = input("かけられる数: ")
-ue_num = int(ue)
-ue_keta = input("かけられる数は何桁？(2~4桁まで): ")
-ue_keta_num = int(ue_keta)
-shita = input("かける数: ")
-shita_num = int(shita)
-shita_keta = input("かける数は何桁？(2~4桁まで): ")
-shita_keta_num = int(shita_keta)
+def hissan(ue, ue_keta, shita, shita_keta):
+    print(" " + str(ue))
+    print("×  " + str(shita))
+    print("-" * (ue_keta + shita_keta))
+    print(ue * shita)
 
-if ue_keta_num == 2 and shita_keta_num == 2:
-    print(" " + str(ue_num))
-    print("×" + str(shita_num))
-    print("----")
-    print(ue_num * shita_num)
+ue = int(input("かけられる数: "))
+ue_keta = len(str(ue))
+shita = int(input("かける数: "))
+shita_keta = len(str(shita))
 
-elif ue_keta_num == 2 and shita_keta_num == 3:
-    print("  " + str(ue_num))
-    print("×" + str(shita_num))
-    print("----")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 2 and shita_keta_num == 4:
-    print("    " + str(ue_num))
-    print("× " + str(shita_num))
-    print("---------")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 3 and shita_keta_num == 3:
-    print(" " + str(ue_num))
-    print("×" + str(shita_num))
-    print("-------")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 3 and shita_keta_num == 2:
-    print(" " + str(ue_num))
-    print("× " + str(shita_num))
-    print("------")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 3 and shita_keta_num == 4:
-    print("   " + str(ue_num))
-    print("× " + str(shita_num))
-    print("---------")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 4 and shita_keta_num == 4:
-    print("  " + str(ue_num))
-    print("× " + str(shita_num))
-    print("---------")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 4 and shita_keta_num == 3:
-    print("  " + str(ue_num))
-    print("×  " + str(shita_num))
-    print("---------")
-    print(ue_num * shita_num)
-
-elif ue_keta_num == 4 and shita_keta_num == 2:
-    print("  " + str(ue_num))
-    print("×   " + str(shita_num))
-    print("---------")
-    print(ue_num * shita_num)
+hissan(ue, ue_keta, shita, shita_keta)
